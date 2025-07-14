@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temps d'espera H8</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#007bc1" />
+  <link rel="icon" href="icon-192.png" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>H8 (Sagrera - Parc de la Pegaso)</h1>
+  <p>Aquesta és una versió PWA. Torna enrere per veure la funcionalitat completa.</p>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
